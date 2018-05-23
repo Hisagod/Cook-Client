@@ -5,8 +5,7 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
 
-import com.aib.di.DaggerAppComponent;
-import com.aib.entity.TypeEntity;
+import com.aib.db.entity.TypeEntity;
 import com.aib.net.Resource;
 import com.aib.repository.MainRepository;
 
@@ -18,8 +17,6 @@ public class MainViewModel extends AndroidViewModel {
 
     public MainViewModel(@NonNull Application application) {
         super(application);
-
-        DaggerAppComponent.create().inject(this);
     }
 
     public LiveData<Resource<TypeEntity>> getJson(String key) {

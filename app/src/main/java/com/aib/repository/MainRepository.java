@@ -2,8 +2,8 @@ package com.aib.repository;
 
 import android.arch.lifecycle.LiveData;
 
-import com.aib.entity.BaseEntity;
-import com.aib.entity.TypeEntity;
+import com.aib.db.entity.BaseEntity;
+import com.aib.db.entity.TypeEntity;
 import com.aib.net.ApiService;
 import com.aib.net.NetworkResource;
 import com.aib.net.Resource;

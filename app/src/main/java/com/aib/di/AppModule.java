@@ -1,5 +1,10 @@
 package com.aib.di;
 
+import android.arch.persistence.room.Room;
+import android.arch.persistence.room.RoomDatabase;
+import android.content.Context;
+
+import com.aib.db.CookDataBase;
 import com.aib.net.ApiService;
 import com.blankj.utilcode.util.LogUtils;
 
@@ -15,6 +20,18 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 @Module
 public class AppModule {
+
+    private final Context ctx;
+
+    public AppModule(Context ctx) {
+        this.ctx = ctx;
+    }
+
+    /**
+     * 提供网络访问入口
+     *
+     * @return
+     */
     @Provides
     public ApiService provideApiService() {
         HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor(new HttpLoggingInterceptor.Logger() {
@@ -40,5 +57,16 @@ public class AppModule {
                 .client(client)
                 .build()
                 .create(ApiService.class);
+    }
+
+    /**
+     * 提供数据库对象
+     *
+     * @return
+     */
+    @Provides
+    public RoomDatabase provideDb() {
+        CookDataBase db = Room.databaseBuilder(ctx, CookDataBase.class, "Cook.db").build();
+        return db;
     }
 }

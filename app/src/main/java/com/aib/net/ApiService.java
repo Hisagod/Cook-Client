@@ -1,10 +1,9 @@
 package com.aib.net;
 
-import com.aib.entity.BaseEntity;
-import com.aib.entity.TypeEntity;
+import com.aib.db.entity.BaseEntity;
+import com.aib.db.entity.TypeEntity;
 
 import io.reactivex.Observable;
-import okhttp3.ResponseBody;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 

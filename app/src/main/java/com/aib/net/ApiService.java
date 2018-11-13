@@ -1,7 +1,7 @@
 package com.aib.net;
 
-import com.aib.db.entity.BaseEntity;
-import com.aib.db.entity.TypeEntity;
+import com.aib.entity.BaseEntity;
+import com.aib.entity.TypeEntity;
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;

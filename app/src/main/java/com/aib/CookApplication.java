@@ -20,7 +20,6 @@ public class CookApplication extends Application implements HasActivityInjector 
         super.onCreate();
         initSdk();
 
-
     }
 
     private void initSdk() {

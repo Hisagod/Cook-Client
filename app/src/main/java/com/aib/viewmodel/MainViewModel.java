@@ -5,7 +5,7 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
 
-import com.aib.db.entity.TypeEntity;
+import com.aib.entity.TypeEntity;
 import com.aib.net.Resource;
 import com.aib.repository.MainRepository;
 

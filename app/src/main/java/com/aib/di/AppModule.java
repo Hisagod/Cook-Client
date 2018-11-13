@@ -4,7 +4,6 @@ import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
-import com.aib.db.CookDataBase;
 import com.aib.net.ApiService;
 import com.blankj.utilcode.util.LogUtils;
 
@@ -57,16 +56,5 @@ public class AppModule {
                 .client(client)
                 .build()
                 .create(ApiService.class);
-    }
-
-    /**
-     * 提供数据库对象
-     *
-     * @return
-     */
-    @Provides
-    public RoomDatabase provideDb() {
-        CookDataBase db = Room.databaseBuilder(ctx, CookDataBase.class, "Cook.db").build();
-        return db;
     }
 }

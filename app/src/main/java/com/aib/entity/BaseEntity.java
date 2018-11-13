@@ -1,4 +1,4 @@
-package com.aib.db.entity;
+package com.aib.entity;
 
 public class BaseEntity<T> {
     private String retCode;

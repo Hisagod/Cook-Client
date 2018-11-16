@@ -1,4 +1,4 @@
-package com.aib.fragment;
+package com.aib.view.fragment;
 
 import com.aib.info.R;
 import com.aib.info.databinding.FragmentTabBinding;

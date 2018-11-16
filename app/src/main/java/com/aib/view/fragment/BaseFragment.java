@@ -1,4 +1,4 @@
-package com.aib.fragment;
+package com.aib.view.fragment;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
@@ -10,7 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public abstract class BaseFragment<D extends ViewDataBinding> extends Fragment {
+import com.aib.di.Injectable;
+
+public abstract class BaseFragment<D extends ViewDataBinding> extends Fragment implements Injectable {
     public D binding;
 
     @Nullable

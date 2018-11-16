@@ -1,4 +1,4 @@
-package com.aib.activity;
+package com.aib.view.activity;
 
 
 import android.arch.lifecycle.ViewModelProvider;
@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.aib.fragment.TabFragment;
+import com.aib.view.fragment.TabFragment;
 import com.aib.info.R;
 import com.aib.info.databinding.ActivityMainBinding;
 import com.aib.viewmodel.MainViewModel;

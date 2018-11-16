@@ -6,7 +6,7 @@ import com.aib.viewmodel.MainViewModel;
 import dagger.Component;
 import dagger.android.support.AndroidSupportInjectionModule;
 
-@Component(modules = {AndroidSupportInjectionModule.class, AppModule.class, ActivityModule.class})
+@Component(modules = {AndroidSupportInjectionModule.class, AppModule.class, ActivityModule.class, FragmentModule.class})
 public interface AppComponent {
-    void inject(MainViewModel mainViewModel);
+    void inject(CookApplication cookApplication);
 }
